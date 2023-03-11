@@ -1,0 +1,87 @@
+selector {
+    propiedad: valor;
+}
+
+/*imports*/
+@import url('https://fonts.googleapis.com/css2? familia= Roboto:ital,peso@0,400;1,300 & display=swap');
+
+
+
+/*selector universal*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*estilo del body*/
+body {
+    
+    background-color: rgb(49, 102, 36);
+}
+/*esta clase tiene el color principal de la pagina*/
+.colorfondoPrincipal{
+    background-color: rgb(170, 91, 104)
+}
+/*estilados del header*/
+header {
+    background-color: pink;
+}
+.header_sticky{
+    margin-bottom: 10px;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+
+}
+.listaNavegacion{
+    list-style: none;
+    margin: 10px;
+
+}
+ul{
+    list-style: none;
+}
+.linkNav{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    background-color: rgb(237, 192, 255);
+    color: black;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 100px;
+    margin: right 10px;
+    }
+/*estilados seccion principal del index*/
+.sectionPrincipalIndex{
+    background-color: rgb(49, 102, 36);
+    font-size: 20px;
+}
+/*estilos centrados de texto*/
+.textoCentrado{
+    text-align: left;
+}
+
+/*estilo de caja*/
+.caja{
+    display:inline-block;
+    width: 50%; /*% son unidades de medida relativas, se adapta a su contenedor*/
+    height: 50%;
+    margin-left: 50px;
+    padding: 30px;
+    margin: 10px;
+   }
+
+body{
+    background-color: rgb(49, 102, 36);
+    height: 100%;
+
+}
+main{
+    height: 50vh;
+}
+
