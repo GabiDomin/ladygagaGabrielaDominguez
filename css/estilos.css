@@ -12,23 +12,27 @@ selector {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 
 /*esta clase tiene el color principal de la pagina*/
 .colorfondoPrincipal{
-    background-color: rgb(170, 91, 104)
+    background-color: rgba(228, 80, 104, 0.644)
+}
+
+/*estilados del body*/
+.body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /*estilados del header*/
-
 
 .navegacionHeader{
     display: flex;
     justify-content: space-between
 }
-.header_sticky{
-    background-color: pink;
+.header{
+    background-color: rgba(240, 53, 84, 0.541);
     margin-bottom: 20px;
     padding: 10px;
     position: sticky;
@@ -74,60 +78,38 @@ selector {
 }
 
 /*estilo de caja*/
-.caja{
+/*.caja{
     display:inline-block;
     width: 50%; /*% son unidades de medida relativas, se adapta a su contenedor*/
-    height: 50%;
-    margin-left: 50px;
-    padding: 30px;
-    margin: 10px;
-}
+    
+
 
 /*estilo de fotos de galeria en sobre mi*/
-.contenedorGaleria{
-    width: 90%;
-    height: 90vh;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.fotoGaleria{
-    background-color:white;
-    border: 1px solid black;
+.imagenGaleria{
     width: 30%;
-    height: 50vh;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-img{
-    width: 100%;
-    height: 90%;
+    height: 230px;
     object-fit: cover;
+    align-items: center;
+
 }
-
-
+.claseParrafo{
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+}
+.claseGaleriacarrusel{
+    width: 100%;
+}
+.carrusel{
+    height: 50%;
+}
 
 .main{
    background-color: rgba(88, 224, 88, 0.493);
 }
 
     
-
-
-
-
-
-.footer{
-    background-color: rgba(88, 224, 88, 0.493);
-   
-}
 .contenedoresdeRedesSociales{
     display: flex;
     justify-content: space-evenly;
