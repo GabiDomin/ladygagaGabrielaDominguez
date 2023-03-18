@@ -15,22 +15,39 @@
       <script src="http://kit.fontawesome.com/07f2594254.js" crossorigin="anonymous"></script>
     
 </head>
-<body>
+<!--esta es la cabecera-->
+<body class="container-fluid body">
   <div>
-    <header class="header_sticky">
-      <div class="contenedorlogo">
-        <img src="../assets/imagenes/logo lady gaga si.png" width="100px" alt="Logo Lady Gaga">
-      </div>
-          <div>
-          <nav class="navegacionHeader">
-            <ul class="listaNavegacion">
-              <li><a class="linkNav" href="../index.html">Inicio</a></li>
-              <li><a class="linkNav" href="./sobremi.html">Sobre mí</a></li>
-              <li><a class="linkNav" href="./musica.html">Música</a></li>
-              <li><a class="linkNav" href="#">Giras</a></li>
-              <li><a class="linkNav" href="./contacto.html">Contacto</a></li>
-           </ul>
-          </nav>
+    <header class="sticky-top header">
+      <nav class="navbar slide navbar-expand-lg navbar-light listaNavegacion text-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="../assets/imagenes/logo lady gaga si.png"width="100px" alt="Logo Lady Gaga">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-aroud w-100 menu">
+              <li class="nav-item linkNav">
+                <a class="nav-link active linkNavAncla" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item linkNav">
+                <a class="nav-link active linkNavAncla" href="#">Sobre mí</a>
+              </li>
+              <li class="nav-item linkNav">
+                <a class="nav-link active linkNavAncla" href="./musica.html">Música</a>
+              </li>
+              <li class="nav-item linkNav">
+                <a class="nav-link active linkNavAncla" href="#">Giras</a> 
+              </li>
+              <li class="nav-item linkNav">
+                <a class="nav-link active linkNavAncla" href="./contacto.html">Contacto</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
          </div>
      
       </header>
@@ -40,7 +57,7 @@
           <h1>Giras</h1>
           
           <h2>Próximos Conciertos</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut natus perspiciatis commodi doloribus eius quo cum perferendis aspernatur veritatis modi magnam maiores recusandae, dignissimos iure esse ut illo. Asperiores, optio.</p>          
+          <p>Estos son los próximos shows brindados por Lady Gaga en el mundo: </p>          
           </section>
 
         <section>
@@ -60,10 +77,12 @@
            <p>Av. Pres. Figueroa Alcorta 7597 </p>
         </section>
       </main>
+
+      <!--el footer-->
       
-      <footer class="footer"> 
+      <footer class="container-fluid"> 
         <div>
-          <p> 2023 por Lady Gaga. Todos los derechos reservados.</p> 
+          <p class="text-center"> 2023 por Lady Gaga. Todos los derechos reservados.</p> 
         </div>
      
         </div>

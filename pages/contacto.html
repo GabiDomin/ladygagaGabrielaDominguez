@@ -14,24 +14,42 @@
          <!--link para iconos-->
          <script src="http://kit.fontawesome.com/07f2594254.js" crossorigin="anonymous"></script>
 </head>
-<body class="claseBody">
+<body class="container-fluid body">
  <!--aca cabecera-->
- <header class="container-fluid">
-  <div class="contenedorlogo">
-    <img src="../assets/imagenes/logo lady gaga si.png" width="100px" alt="Logo Lady Gaga">
-  </div>
-  <div>
-    <nav class="navegacionHeader">
-        <ul class="listaNavegacion">
-          <li><a class="linkNav" href="../index.html">Inicio</a></li>
-          <li><a class="linkNav" href="./sobremi.html">Sobre mí</a></li>
-          <li><a class="linkNav" href="./musica.html">Música</a></li>
-          <li><a class="linkNav" href="./giras.html">Giras</a></li>
-          <li><a class="linkNav" href="#">Contacto</a></li>
-       </ul>
-</nav>
-</div>
-  </header> 
+ <div>
+  <header class="sticky-top header">
+    <nav class="navbar slide navbar-expand-lg navbar-light listaNavegacion text-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="../assets/imagenes/logo lady gaga si.png"width="100px" alt="Logo Lady Gaga">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-aroud w-100 menu">
+            <li class="nav-item linkNav">
+              <a class="nav-link active linkNavAncla" aria-current="page" href="../pages/index.html">Inicio</a>
+            </li>
+            <li class="nav-item linkNav">
+              <a class="nav-link active linkNavAncla" href="./pages/sobremi.html">Sobre mí</a>
+            </li>
+            <li class="nav-item linkNav">
+              <a class="nav-link active linkNavAncla" href="./pages/musica.html">Música</a>
+            </li>
+            <li class="nav-item linkNav">
+              <a class="nav-link active linkNavAncla" href="./pages/giras.html">Giras</a> 
+            </li>
+            <li class="nav-item linkNav">
+              <a class="nav-link active linkNavAncla" href="#">Contacto</a> 
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </header> 
+ </div>
+ 
   <main class="main">
     <!--la parte principal del navegador web-->
     <section>
@@ -59,21 +77,16 @@
             <input type="submit" value="Enviar Formulario">
             <input type="reset" value="Limpiar Formulario">
           </div>
-          
-     
-     
-        
-        </form>
+          </form>
       </div>
     </section>
 
   </main>
+  <!--el footer-->
   <footer class="container-fluid">
     <div>
-      <p>2023 por Lady Gaga. Todos los derechos reservados.</p>
+      <p class="text-center">2023 por Lady Gaga. Todos los derechos reservados.</p>
     </div>
-      
-      
     </div>
     <div class="contenedoresdeRedesSociales">
       <a class="anclaRedSocial" href="#" target="_blank"><i class="fab fa-facebook"></i></a>

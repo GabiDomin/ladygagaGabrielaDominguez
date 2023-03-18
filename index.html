@@ -13,47 +13,62 @@
         <link rel="stylesheet" href="./css/estilos.css">
         <!--link para iconos-->
         <script src="http://kit.fontawesome.com/07f2594254.js" crossorigin="anonymous"></script>
+        
        
     </head>
     <body class="container-fluid body">
       <!--esta es la cabecera-->
+      <div>
         <header  class="sticky-top header">
-          <div class="contenedorLogo">
-            <a href="#">
-              <img src="./assets/imagenes/logo lady gaga si.png"width="100px"  alt="Logo Lady Gaga">
-            </a>
-        
-          </div>
-          <div>
-            <nav class="navegacionHeader">
-              <ul class="listaNavegacion">
-                <li> <a class="linkNav" href="#">Inicio</a></li>
-                <li> <a class="linkNav" href="./pages/sobremi.html">Sobre mí</a></li>
-                <li> <a class="linkNav" href="./pages/musica.html">Música</a></li>
-                <li> <a class="linkNav" href="./pages/giras.html">Giras</a></li>
-                <li> <a class="linkNav" href="./pages/contacto.html">Contacto</a></li>
-              </ul>
-            </nav>
-          </div>
+          <nav class="navbar slide navbar-expand-lg navbar-light listaNavegacion text-black">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="./assets/imagenes/logo lady gaga si.png"width="100px" alt="Logo Lady Gaga">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-aroud w-100 menu">
+                  <li class="nav-item linkNav">
+                    <a class="nav-link active linkNavAncla" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item linkNav">
+                    <a class="nav-link active linkNavAncla" href="./pages/sobremi.html">Sobre mí</a>
+                  </li>
+                  <li class="nav-item linkNav">
+                    <a class="nav-link active linkNavAncla" href="./pages/musica.html">Música</a>
+                  </li>
+                  <li class="nav-item linkNav">
+                    <a class="nav-link active linkNavAncla" href="./pages/giras.html">Giras</a> 
+                  </li>
+                  <li class="nav-item linkNav">
+                    <a class="nav-link active linkNavAncla" href="./pages/contacto.html">Contacto</a> 
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </header> 
+      </div>
+       <!--la parte principal de la pantalla-->
         <main>
           <section class="sectionPrincipalIndextextoCentrado">
-            <h1>Lady Gaga</h1>
             <h2>La Reina del Pop</h2>
             <div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas exercitationem nisi molestiae maxime doloremque aliquid veniam iste non incidunt cumque nam culpa facere quidem, perferendis quae reiciendis possimus saepe quos.</p>
+              <p> Este es el sitio web de Lady Gaga, en el que estarán informados de todas las novedades de la Reina del Pop, disfrutar de sus discos y de poder participar de sus shows que brinda en todo el mundo.</p>
             </div>
         </section>
         </main>
         <section class="row claseGaleriacarrusel">
-          <div class="col">
+          <div class="col-md-12">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
-              <div class="carousel-inner clasecarrusel">
+              <div class="carousel-inner clasecarrusel justify-content-center">
                 <div class="carousel-item active">
                   <img src="./assets/imagenes/lady-gaga-anuncia-un-nuevo-remix-de-su-album-chromatica.jpg_554688468.webp" class="d-block w-100" alt="...">
                 </div>
@@ -70,16 +85,11 @@
               </button>
             </div>
           </div>
-         
-
-      
-
-          
-
-        </section>
+         </section>
+         <!--el footer-->
         <footer class="container-fluid">
             <div>
-              <p> 2023 por Lady Gaga. Todos los derechos reservados.</p> 
+              <p class="text-center"> 2023 por Lady Gaga. Todos los derechos reservados.</p> 
             </div>
              
             <div class="contenedoresdeRedesSociales">

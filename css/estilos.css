@@ -21,52 +21,57 @@ selector {
     background-color: rgba(228, 80, 104, 0.644)
 }
 
+.tituloPrincipal{
+    font-family: 'Roboto', sans-serif;
+}
 /*estilados del body*/
 .body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
 }
 /*estilados del header*/
 
 .navegacionHeader{
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    
 }
 .header{
     background-color: rgba(240, 53, 84, 0.541);
-    margin-bottom: 20px;
     padding: 10px;
     position: sticky;
-    top: 0px;
-    z-index: 10;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    
-
 }
+
 .listaNavegacion{
     display: flex;
-    list-style: none;
-    margin: 10px;
-    justify-content: flex-end;
-    margin-left: 730px;
+    width: 100%;
+    justify-content: space-around;
+}
 
-}
-.ul{
+.menu{
     list-style: none;
 }
+
 .linkNav{
-    display: flex;
-    text-decoration: none;
-    background-color: rgb(237, 192, 255);
+    position: relative;
+    display: inline-block;
     color: black;
-    margin-left: 20px;
     font-size: 20px;
-    margin-top: 5px;
-    width: 100px;
-    margin: right 10px;
-    }
+    width: 100%;
+    justify-content: space-around;
+}
+
+.linkNavAncla{
+        display: block;
+        padding: 15px 20px;
+        background-color: rgb(237, 192, 255);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+}
+    
+
 /*estilados seccion principal del index*/
 .sectionPrincipalIndex{
     background-color: rgb(49, 102, 36);
@@ -77,39 +82,58 @@ selector {
     text-align: left;
 }
 
-/*estilo de caja*/
-/*.caja{
-    display:inline-block;
-    width: 50%; /*% son unidades de medida relativas, se adapta a su contenedor*/
-    
-
-
 /*estilo de fotos de galeria en sobre mi*/
-.imagenGaleria{
-    width: 30%;
-    height: 230px;
-    object-fit: cover;
-    align-items: center;
 
-}
-.claseParrafo{
-    width: 30%;
+.imagenGaleria{
+    width: 300px;
     height: 100%;
     object-fit: cover;
-    text-align: center;
+    align-items: center;
+   
+    
 }
+.imagenGaleria:hover{
+border: 5px solid white;
+}
+.titulodeGaleria{
+    object-fit:cover;
+    margin-top: 20px;
+    font-size: 100%;
+    font-weight: bold;
+    flex-direction: row;
+    margin-left: 0;
+   
+}
+
+.claseParrafo{
+    width: 300px;
+    height: 50%;
+    object-fit: cover;
+    text-align: right;
+}
+
+/*estilo de carrusel*/
 .claseGaleriacarrusel{
     width: 100%;
+    align-items: center;
 }
 .carrusel{
     height: 50%;
 }
 
-.main{
-   background-color: rgba(88, 224, 88, 0.493);
+/*estilo de la música*/
+.cajaMusica{
+    width: 150%;
+    height: 100vh;
+    object-fit: cover;
+    align-items: center;
+    margin-top: 10px;
+    padding: 80px;
+    padding-bottom: 20px;
+    justify-content: space-between;
 }
 
-    
+/*estilo de las redes sociales*/
 .contenedoresdeRedesSociales{
     display: flex;
     justify-content: space-evenly;
@@ -121,5 +145,5 @@ selector {
     text-decoration: none;
 }
 
-/*medias queries que adapten los componentes y estilados a una versión mobile*/
+
 

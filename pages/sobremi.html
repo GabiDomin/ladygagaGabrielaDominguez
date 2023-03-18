@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mí</title>
      <!--bootstrap-->
-     <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC">
+     <link href="../css/bootstrap.min.css" rel="stylesheet">
 
       <link rel="shortcut icon" href="../favicon.ico" type= "image/x-icon">
     
@@ -16,58 +16,79 @@
       <script src="http://kit.fontawesome.com/07f2594254.js" crossorigin="anonymous"></script>
    
 </head>
-<body>
+<body class="container-fluid body">
   <!--esta es la cabecera-->
-    <header class="header_sticky">
-      <div class="contenedorlogo">
-        <img src="../assets/imagenes/logo lady gaga si.png" width="100px" alt="Logo Lady Gaga">
-      </div>
-      <div>
-        <nav class="navegacionHeader">
-            <ul class="listaNavegacion">
-              <li><a class="linkNav" href="../index.html">Inicio</a></li>
-              <li><a class="linkNav" href="#">Sobre mí</a></li>
-              <li><a class="linkNav" href="./musica.html">Música</a></li>
-              <li><a class="linkNav" href="./giras.html">Giras</a></li>
-              <li><a class="linkNav" href="./contacto.html">Contacto</a></li>
-           </ul>
-    </nav>
-    </div>
-
+  <div>
+    <header class="sticky-top header">
+      <nav class="navbar slide navbar-expand-lg navbar-light listaNavegacion text-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="../assets/imagenes/logo lady gaga si.png"width="100px" alt="Logo Lady Gaga">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-aroud w-100 menu">
+              <li class="nav-item linkNav">
+                <a class="nav-link active linkNavAncla" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item linkNav">
+                <a class="nav-link active linkNavAncla" href="#">Sobre mí</a>
+              </li>
+              <li class="nav-item linkNav">
+                <a class="nav-link active linkNavAncla" href="./musica.html">Música</a>
+              </li>
+              <li class="nav-item linkNav">
+                <a class="nav-link active linkNavAncla" href="./giras.html">Giras</a> 
+              </li>
+              <li class="nav-item linkNav">
+                <a class="nav-link active linkNavAncla" href="./contacto.html">Contacto</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       </header> 
+  </div>
+    
       <main class="container">
         <!--la parte principal del navegador web-->
         <section class="sectionPrincipalSobremitextoCentrado">
           <h1>Sobre mí</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, officia exercitationem deserunt cum consequuntur, omnis illum animi architecto vitae eligendi ea cumque commodi dolor! Itaque assumenda adipisci sapiente tempore atque!
+            Mi nombre es Stefani Joanne Angelina Germanotta, nací el 28 de marzo de 1986, todos me conocen por mi nombre artístico Lady Gaga, soy una cantante, compositora, productora, bailarina y actriz. Nací en Nueva York, Estados Unidos. 
           </p>
-        </section>
+          <p>
+            En el año 2008 lancé mi primer disco titulado “The Fame y The Family Monster”, siendo uno de los discos más vendidos de la historia. La canción “Poker Face” fue una de las más escuchadas en las radios. Y desde entonces, me dedicamos mi tiempo a producir canciones para mis fanáticos y en participar en talentosas películas.
+          </p>
+         </section>
         
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-4 d-flex justify-content-center">
-                  <img class="imagenGaleria" src="../assets/imagenes/foto galeria 1.webp" alt="">
-                  <h2>Concierto en Nueva York</h2>
+            <div id="galeria" class="container">
+              <div class="row col-sm-12 col-lg-6d d-flex flex-direction justify-content-between">
+                <div class="col-sm-12 col-lg-6 d-flex flex-column align-center">
+                  <img class="imagenGaleria justify-content-center pt-4 pb-10 p-10" src="../assets/imagenes/foto galeria 1.webp" alt="">
+                  <h2 class="titulodeGaleria text-center pt-0 ms-0 me-5 ps-0">Concierto en Nueva York</h2>
                 </div>
-                <div class="col">
-                  <p class="claseParrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempore harum soluta nam architecto sed repellat libero impedit, nemo exercitationem hic quidem? Aliquam temporibus necessitatibus architecto exercitationem corporis, a blanditiis?</p>
+                <div class="col-sm-12 col-lg-6  align-center">
+                  <p class="claseParrafo text-center mt-5 my-3 mx-4 ps-20 pt-2">Ante miles de espectadores, show brindado por Lady Gaga en Madison Square Garden en Nueva York en Octubre del año 2022. </p>
                 </div>
-                <div class="col-lg-4 d-flex justify-content-center">
-                  <img class="imagenGaleria" src="../assets/imagenes/foto galeria 2.jpg" alt="">
-                  <h2>Concierto en México</h2>
+                <div class="col-sm-12 col-lg-6 d-flex flex-column align-center">
+                  <img class="imagenGaleria justify-content-center pt-5 pb-10" src="../assets/imagenes/foto galeria 2.jpg" alt="">
+                  <h2 class="titulodeGaleria text-center pt-0 ms-0 me-5 ps-0">Concierto en México</h2>
                 </div>
-                <div class="col-8">
-                  <p class="claseParrafo">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias error ad odit, illum explicabo quod dolore aliquid. Vero impedit aliquid accusantium provident officia quaerat a magnam, architecto optio quo exercitationem!
+                <div class="col-sm-12 col-lg-6 align-center">
+                  <p class="claseParrafo text-center mt-5 my-3 mx-4 ps-20 pt-5">
+                    Ante doscientos mil espectadores, show brindado en México en Diciembre del año 2022.
                   </p>
                 </div>
               </div>
             </div>
           </main>
+          <!--el footer-->
       <footer class="container-fluid">
         <div>
-          <p> 2023 por Lady Gaga. Todos los derechos reservados.</p> 
+          <p class="text-center"> 2023 por Lady Gaga. Todos los derechos reservados.</p> 
         </div>
         
         </div>

@@ -15,39 +15,64 @@
         <script src="http://kit.fontawesome.com/07f2594254.js" crossorigin="anonymous"></script>
   
 </head>
-<body>
+<body class="container-fluid body">
   <!--esta es la cabecera-->
-    <header class="header_sticky">
-      <div class="contenedorlogo">
-        <img src="../assets/imagenes/logo lady gaga si.png" width="100px" alt="Logo Lady Gaga">
-      </div>
-              <div>
-                <nav class="navegacionHeader">
-                  <ul class="listaNavegacion">
-                    <li><a class="linkNav" href="../index.html">Inicio</a></li>
-                    <li><a class="linkNav" href="./sobremi.html">Sobre mí</a></li>
-                    <li><a class="linkNav" href="#">Música</a></li>
-                    <li><a class="linkNav" href="./giras.html">Giras</a></li>
-                    <li><a class="linkNav" href="./contacto.html">Contacto</a></li>
-                  </ul>
-              </nav>
-              </div>
-              </header> 
-              <main class="main">
-                <!--la parte principal del navegador web-->
-                <section class="cajamusica">
-                  <h1>Música</h1>
-                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1QV6tiMFM6fSOKOGLMHYYg?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </section>
-                <div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis odio modi voluptate natus vitae sed odit quo, tenetur quos illum quam temporibus assumenda impedit ipsum blanditiis magni unde cumque iusto.</p>
+  <div>
+    <header class="sticky-top header">
+      <nav class="navbar slide navbar-expand-lg navbar-light listaNavegacion text-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="../assets/imagenes/logo lady gaga si.png"width="100px" alt="Logo Lady Gaga">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-aroud w-100 menu">
+              <li class="nav-item linkNav">
+                <a class="nav-link active linkNavAncla" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item linkNav">
+                <a class="nav-link active linkNavAncla" href="./sobremi.html">Sobre mí</a>
+              </li>
+              <li class="nav-item linkNav">
+                <a class="nav-link active linkNavAncla" href="#">Música</a>
+              </li>
+              <li class="nav-item linkNav">
+                <a class="nav-link active linkNavAncla" href="./giras.html">Giras</a> 
+              </li>
+              <li class="nav-item linkNav">
+                <a class="nav-link active linkNavAncla" href="./contacto.html">Contacto</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      </header> 
+  </div>
+    
+  <main class="main">
+    <!--la parte principal del navegador web-->
+      <section>
+        <h1>Música</h1>
+        </section>
+          <div class="container">
+              <div class="row col-sm-12 col-lg-6 d-flex flex-direction justify-content-between">
+              <div class="col-sm-12 col-lg-6 d-flex flex-column">
+               <iframe class="col-sm-12 col-lg-6 flex-column cajaMusica mt-2 p-4 my-4 px-2 p-10 ms-0 mx-5" style="border-radius:12px" src="https://open.spotify.com/embed/track/1QV6tiMFM6fSOKOGLMHYYg?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
-              </main>
-              <footer class="main">
-                <div>
-                  <p> 2023 por Lady Gaga. Todos los derechos reservados.</p> 
+                <div class="col-sm-12 col-lg-6">
+                  <p class="col-sm-12 col-lg-6 flex-column cajaMusica text-center mt-4 my-4 mx-5 ps-20 pt-4 ms-4 me-10">Disco “The Fame Monster”, “Poker Face, canción número 1 de los ranking del mundo. El disco fue lanzado al mercado musical el 18 de noviembre de 2009 y contiene ocho canciones, entre ellas, Alejandro, Bad Romance. </p>
                 </div>
-               
+                </div>
+                </div>
+        </section>
+        </main>
+        <!--el footer-->
+        <footer class="container-fluid">
+                <div>
+                <p class="text-center"> 2023 por Lady Gaga. Todos los derechos reservados.</p> 
+                </div>
                 </div>
                 <div class="contenedoresdeRedesSociales">
                   <a class="anclaRedSocial" href="#" target="_blank"><i class="fab fa-facebook"></i></a>
